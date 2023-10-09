@@ -1,0 +1,700 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style-type: none;
+}
+
+body {
+    direction: ltr;
+    font-family: 'Cairo', sans-serif;
+}
+
+:root {
+    --main-color: #9e4b47;
+    --blue: #007bff;
+
+}
+
+
+/* =============== navBar start ========== */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.856);
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.nav-nav {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    transition: width .6s;
+}
+
+.nav-link:hover:before {
+    width: 3rem;
+}
+
+.nav-link.active:before {
+    width: 3rem;
+}
+.span-info{
+    color:#9e4b47;
+}
+
+@media (max-width: 992px) {
+    .nav-link:hover:before {
+        width: 0;
+    }
+
+    .nav-link.active:before {
+        width: 0;
+    }
+
+    .main-logo {
+        width: 5rem;
+        position: relative;
+        right: 2%;
+
+    }
+    .nav-nav{
+        position: relative;
+        left: 10%;
+    }
+
+    .appointment-btn {
+        right: 2%;
+    }
+
+}
+
+@media (max-width: 1077px) {
+
+    .main-logo {
+        width: 5rem;
+        position: relative;
+        right: 2%;
+
+    }
+
+    .flag {
+        top: 8%;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .navInfo {
+        position: relative;
+        right: 10%;
+
+    }
+   
+}
+
+
+.nav-nav{
+    position: relative;
+    right: 2%;
+}
+
+.main-logo {
+    width: 10rem;
+    position: relative;
+    right: 20%;
+}
+
+.appointment-btn {
+    /* background-color: #659edb; */
+    /* padding: .7rem 1rem ; */
+    border-radius: 1rem;
+    position: relative;
+    left: 5%;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color) !important;
+    font-weight: 600;
+    transition: all .4s;
+
+
+}
+.nav-btn{
+    position: relative;
+    left: 15%;
+}
+.flag {
+    width: 1.5rem;
+    right: 0%;
+}
+
+/* .appointment-btn a {
+    color: #fff ;
+    transition: all .4s;
+
+} */
+.appointment-btn:hover {
+    background-color: #fff;
+
+}
+
+.appointment-btn:hover a {
+    color: var(--main-color) !important;
+
+}
+
+
+/* ============ NavBar end ================ */
+
+/* =========== start home ========== */
+/* #home {
+    background: url(../img/);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+} */
+
+.hero-video {
+    position: relative;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.hero-video__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-video {
+        
+        position: relative;
+        height: 70vh;
+        overflow: hidden;
+    }
+    
+   
+
+    
+}
+
+@media (max-width: 480px) {
+    .hero-video {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+    }
+   
+
+   
+}
+
+
+ 
+/* =========== end home ========== */
+
+/* start Apointment Form */
+
+.btn-main {
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color) !important;
+    font-weight: 600;
+    transition: all .4s;
+
+
+}
+
+.btn-main:hover {
+    background-color: #fff;
+    color: var(--main-color);
+
+}
+
+/* end Apointment Form */
+
+
+/* ======= start about ======== */
+
+
+/* =====heading===== */
+.heading {
+    text-align: center;
+    position: relative;
+}
+
+.heading h2 {
+    color: #dee3e4;
+    font-weight: 600;
+    font-size: 8.1rem;
+    opacity: 0.4;
+}
+
+.heading p {
+    color: #212529 !important;
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading p::before {
+    content: '';
+    background: var(--main-color);
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-cap span {
+    color: var(--main-color);
+    line-height: 3rem;
+}
+
+.about-cap p {
+    line-height: 2rem;
+}
+
+.about-icons span {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: solid 1px var(--main-color);
+}
+
+.about-icons i {
+    color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+
+    .heading h2 {
+        font-size: 7rem;
+    }
+
+    .heading p {
+        font-size: 1.9rem;
+    }
+
+    .about-cap {
+        margin-top: 1.3rem;
+        text-align: center;
+    }
+
+    .icon-left {
+        margin-top: 1rem;
+    }
+
+    .about-cap h3 {
+        font-size: 1.4rem;
+    }
+
+    .about-icons h6 {
+        font-size: 1rem !important;
+    }
+
+    .about-icons i {
+        font-size: 1rem !important;
+    }
+
+}
+
+@media (max-width: 766px) {
+
+    .heading h2 {
+        font-size: 5rem;
+    }
+
+    .heading p {
+        font-size: 1.4rem;
+    }
+
+    .about-cap h3 {
+        font-size: 1rem;
+    }
+
+    .about-cap p {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 388px) {
+
+    .heading h2 {
+        font-size: 3rem;
+    }
+
+    .heading p {
+        font-size: 1rem;
+    }
+
+}
+
+/* ======= end about ======= */
+
+/* ============ start our-services ======== */
+
+.services-right-box {
+    height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.services-card {
+    background-color: #F4F1EA;
+    transition: all .7s;
+}
+
+.services-card h5,
+.services-card p {
+    transition: all .7s;
+}
+
+.services-card:hover {
+    background-color: #000000;
+    /* box-shadow: 0 0 50px #ccc; */
+}
+
+.services-card:hover h5 {
+    color: #dddada !important;
+}
+
+.services-card:hover p {
+    color: #dddada !important;
+
+}
+
+
+@media (max-width: 992px) {
+
+    .sevices-img {
+        width: 25%;
+        margin-bottom: 1rem;
+    }
+
+    .services-left-box {
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width: 388px) {}
+
+/* ============ end our-services ======== */
+
+
+/* ================ start offer ========= */
+
+.offers-nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .offers-nav-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transition: width .5s;
+
+} */
+
+.offers-img img {
+    border-radius: 5%;
+
+}
+
+/* .offers-nav-link.active:after {
+    width: 3rem;
+} */
+
+.offers-nav-link.active {
+    color: var(--main-color);
+}
+
+
+/* $$$$ offers img & layer $$$$$$$$$ */
+.offers-box {
+    position: relative;
+}
+
+
+.offers-layer {
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity .8s;
+    border-radius: 5%;
+
+
+}
+
+.offers-box:hover .offers-layer {
+    opacity: 1;
+}
+
+.offers-layer-cap h5 {
+    font-size: 1.7rem;
+
+
+}
+
+.offers-icon i,
+.salary {
+    color: #FDB923;
+}
+
+
+
+
+
+/* =============== end offers========= */
+
+/* ####################### */
+
+/* =============== start devices ========= */
+
+.devices-btn {
+    width: 2rem;
+    height: 2rem;
+    border: var(--main-color) solid 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all.4s;
+
+}
+
+.devices-btn:hover {
+    background-color: var(--main-color);
+}
+
+.devices-btn i {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.devices-btn:hover i {
+    color: #fff;
+    transition: all.4s;
+}
+
+
+.devices-card img {
+    transition: transform 0.5s;
+}
+
+.devices-card:hover img {
+    transform: scale(1.3, 1.3);
+
+}
+
+/* =============== end devices ========= */
+
+
+/* =============== start doctors ========= */
+
+/* .doctors-con {
+    background-image: url(../img/banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.doctors-layer {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+} */
+
+.doctors-icon {
+    height: 3.3rem;
+    width: 3.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.doctors-icon i {
+    font-size: 2.5rem;
+    color: var(--blue);
+
+}
+
+.doctors-info p {
+    transition: color 1s;
+}
+
+.doctors-info h5 {
+    transition: color 1s;
+
+}
+
+
+.doctors-card:hover .doctors-info {
+    background-color: #fff !important;
+}
+
+.doctors-card:hover .doctors-info h5 {
+    color: #000000 !important;
+}
+
+.doctors-card:hover .doctors-info p {
+    color: #000000 !important;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    height: 8px;
+    width: 1.2rem;
+}
+
+.carousel-item .doctors-info {
+    transform: scale(0);
+    transition: transform 1s;
+    transition-delay: 0.5s;
+
+}
+
+.carousel-item.active .doctors-info {
+    transform: scale(1);
+
+}
+
+.carousel-item .doctors-img {
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.carousel-item.active .doctors-img {
+    transform: scale(1);
+}
+
+/* =============== end doctors ========= */
+
+/* ##################### start footer ############## */
+footer {
+    background-image: url(../img/appoinmentbg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+
+}
+
+.footer-layer {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* .footer-icons{
+    left: 10%;
+    top: 10%;
+}
+.footer-img{
+    right: 10%;
+    top: 1%;
+} */
+
+/* .top-footer{
+    position: relative;
+} */
+/* .top-footer::after{
+    text-align: center;
+    content: '';
+    height: .5px;
+    width: 90%;
+    background-color:#9e4b474f;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+} */
+.footer-icons span{
+    transition: all .5s;
+}
+.footer-icons span:hover{
+    background-color: var(--main-color) !important;
+}
+.down-footer li i{
+font-size: 13px;
+}
+.lastfooter{
+    
+    border-top: #b6b6b5 solid 1px ;
+}
+.beautyWord{
+    color: var(--main-color);
+}
+
+
+@media (max-width: 992px) {
+
+    .footer-img img {
+        width: 50% !important;
+        margin-bottom: 1rem;
+    }
+    .top-footer::after{
+        bottom: -40%;
+    }
+   
+    
+}
+@media (max-width: 766px) {
+
+    .top-footer::after{
+        bottom: -60%;
+    }
+}
+@media (max-width: 390px) {
+
+    .top-footer::after{
+        bottom: -70%;
+    }
+}
+
+
+
+/* ##################### end footer ############## */

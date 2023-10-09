@@ -1,0 +1,15 @@
+[2023-07-21 12:41:10] local.ERROR: syntax error, unexpected '->' (T_OBJECT_OPERATOR) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected '->' (T_OBJECT_OPERATOR) at /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/app/Providers/RouteServiceProvider.php:60)
+[stacktrace]
+#0 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/composer/ClassLoader.php(432): Composer\\Autoload\\ClassLoader::Composer\\Autoload\\{closure}()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(670): spl_autoload_call()
+#3 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\\Foundation\\Application->resolveProvider()
+#4 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\\Foundation\\Application->register()
+#5 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(584): Illuminate\\Foundation\\ProviderRepository->load()
+#6 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#7 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(210): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#8 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(322): Illuminate\\Foundation\\Application->bootstrapWith()
+#9 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 /mnt/2fb2b1fc-725c-4a4c-9f3e-ff7708f6834d/ipda3/ipda3-cms/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 {main}
+"} 
